@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <!--favicon start-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="mask-icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.ico">
+
+    <!--favicon end-->
+
+    <title>AR Bridge</title>
+    <meta name="description" content="Twórz aplikacje AR lub moduły AR w istniejących aplikacjach i zarządzaj nimi w czasie rzeczywistym dzięki AR Bridge.">
+
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TitAR Bridge" />
+    <meta property="og:description" content="Twórz aplikacje AR lub moduły AR w istniejących aplikacjach i zarządzaj nimi w czasie rzeczywistym dzięki AR Bridge." />
+    <meta property="og:site_name" content="AR Bridge" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="TitAR Bridge" />
+    <meta name="twitter:description" content="Twórz aplikacje AR lub moduły AR w istniejących aplikacjach i zarządzaj nimi w czasie rzeczywistym dzięki AR Bridge." />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:image" content="" />
+
+    <link rel="stylesheet" href="../css/app.css">
+
+
+</head>
+
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    <nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <span class="underline-nav"></span>
+</button>
+
+            <a class="navbar-brand" href="index.html"><img src="../img/logo.svg" alt="Ar bridge"></a>
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a class="page-scroll" href="#demo">Request a Demo</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">PL</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+	<header>
+	<div class="container">
+
+		<div class="img-header">
+			<img class="img-responsive animated fadeInUp delay-1s" src="../img/hero_iphone.png" alt="">
+		</div>
+
+		<div class="row">
+			<div class="col-md-5 col-xs-12 col-md-offset-7">
+				<h1 class="animated fadeInUp delay-1s">Integrating the real world with a mobile screen</h1>
+				<p class="animated fadeInUp delay-1s">Create apps or add modules to the existing ones and manage them in real time.</p>
+
+				<a class="page-scroll button black" href="#demo">Request a Demo</a>
+				<a class="page-scroll button black" href="#ar-bridge">More info</a>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+
+
+
+
+
+	
+
+    <section class="no-padding">
+	<div class="container">
+		<div class="row">
+	
+			<div class="col-md-6 col-xs-12">
+
+				<div class="spacer s4 hide-sm"></div>
+				<div class="spacer s4 hide-sm"></div>
+				<div class="spacer s4 hide-sm"></div>
+				<div class="spacer s4"></div>
+
+				<h2 class="text-left">What is <br> Augmented Reality?</h2>
+				<div class="underline"></div>
+
+				<div class="spacer s2"></div>
+
+				<p class="text-left"><strong>AR is the integration of digital images with a real world. It connects both worlds on a screen of a mobile device, in real time.</p>
+
+				<p class="text-left">Imagine a world where you can point your device at any given object and immediately receive a full information about it.</p>
+
+				<p class="text-left">AR can completely changes the way we learn, the way we train staff and support field workers. For marketing departments it is a brand new tool which allows users to become a part of a storyline.</p>
+
+			</div>
+			
+			<div id="lottie"></div>
+	
+			<div class="col-md-6 col-xs-12">
+				<div id="canvas-2" class="canvas"></div>
+			</div>
+	
+		</div>
+	</div>
+</section>
+
+
+    <section class="no-padding" id="ar-bridge">
+	<div class="container">
+		<div class="row">
+	
+			<div class="col-md-6 col-xs-12">
+
+				<div class="spacer s4 hide-sm"></div>
+				<div class="spacer s4 hide-sm"></div>
+				<div class="spacer s4"></div>
+
+				<h2 class="text-left">AR Bridge. Customize your message.</h2>
+				<div class="underline"></div>
+
+				<div class="spacer s2"></div>
+
+				<p class="text-left">AR Bridge uses a full potential of Augmented Reality in combination with geolocalization and advanced image recognition algorithms and artificial intelligence. AR Bridge also enables planning, coordinating and managing multiple AR marketing campaigns and channels of communication. It can create a completely new experience for customers.</p>
+
+				<div class="spacer s4"></div>
+
+				<ul class="tabs hide-sm">
+					<li class="active"><a href="#tab1" data-toggle="tab">Dedicated AR App</a></li>
+					<li><a href="#tab2" data-toggle="tab">AR Module</a></li>
+					<li><a href="#tab3" data-toggle="tab">AR Bridge Platform</a></li>
+				</ul>
+
+				
+			</div>
+	
+			<div class="col-md-6 col-xs-12 hide-sm">
+				<div class="tab-content">
+
+					<div class="tab-pane active" id="tab1">
+
+						<img class="img-responsive img-center" src="../img/aplicacja_ar.png" alt="Aplikacja dedykowana AR">
+
+						<div class="box-ar">
+							<p>AR Bridge App is a completely new approach to sales pitches and marketing campaigns. User becomes an integral part of the experience and receives personalized offers and ads. Information can be delivered in an engaging and innovative way.</p>
+						</div>
+
+					</div>
+
+					<div class="tab-pane" id="tab2">
+
+						<img class="img-responsive img-center" src="../img/aplicacja_ar.png" alt="Moduł AR">
+
+						<div class="box-ar">
+							<p>If you already own an AR mobile app you can easily connect it with our AR Module. It can be connected with an existing app as an additional tab and can use the full potential of AR right away.</p>
+						</div>
+					</div>
+
+					<div class="tab-pane" id="tab3">
+
+						<img class="img-responsive img-center" src="../img/platforma_ar.png" alt="Platforma AR Bridge">
+
+						<div class="box-ar">
+							<p>AR Bridge is an intuitive platform to manage multiple ad and marketing campaigns in real time. It is a great tool for omni-channel campaigns and allows for a brand new way of communication with customers. It delivers spot-on analytics and user statistics, needed when creating personalized offers.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-6 col-xs-12 hide-lg">
+				<h2 class="text-center">Dedicated AR App</h2>
+				<img class="img-responsive img-center" src="../img/aplicacja_ar.png" alt="Aplikacja dedykowana AR">
+				<div class="spacer s1"></div>
+				<p class="text-center">AR Bridge App is a completely new approach to sales pitches and marketing campaigns. User becomes an integral part of the experience and receives personalized offers and ads. Information can be delivered in an engaging and innovative way.</p>
+
+				<div class="spacer s2"></div>
+
+				<h2 class="text-center">AR Module</h2>
+				<img class="img-responsive img-center" src="../img/aplicacja_ar.png" alt="Moduł AR">
+				<div class="spacer s1"></div>
+				<p class="text-center">If you already own an AR mobile app you can easily connect it with our AR Module. It can be connected with an existing app as an additional tab and can use the full potential of AR right away.</p>
+
+				<div class="spacer s2"></div>
+
+				<h2 class="text-center">AR Bridge Platform</h2>
+				<img class="img-responsive img-center" src="../img/platforma_ar.png" alt="Platforma AR Bridge">
+				<div class="spacer s1"></div>
+				<p class="text-center">AR Bridge is an intuitive platform to manage multiple ad and marketing campaigns in real time. It is a great tool for omni-channel campaigns and allows for a brand new way of communication with customers. It delivers spot-on analytics and user statistics, needed when creating personalized offers.</p>
+			</div>
+	
+		</div>
+	</div>
+</section>
+
+    <section class="bg-yellow">
+	<div class="container">
+		<div class="row">
+	
+			<div class="col-md-12 col-xs-12">
+				<h2 class="text-center">Plan and manage AR in 3 easy steps</h2>
+			</div>
+
+			<div class="spacer s4"></div>
+			<div class="spacer s4"></div>
+			<div class="spacer s4"></div>
+
+			<div class="col-md-4 col-xs-12">
+				<div class="box-plan" data-plan="1">
+					<div class="title">Choose a marker</div>
+					<p>Logo in TV ad, packaging, photo, object</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-xs-12">
+				<div class="box-plan" data-plan="2">
+					<div class="title">Choose AR animation</div>
+					<p>3D objects, interactive logo, virtual assistant</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-xs-12">
+				<div class="box-plan" data-plan="3">
+					<div class="title">Choose interaction</div>
+					<p>Educational video, info ad, social media sharing</p>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+</section>
+    
+    <section>
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-md-8 col-xs-12 col-md-offset-2">
+				<h2 class="text-center">Why using AR Bridge?</h2>
+			</div>
+
+		
+			<div class="col-md-8 col-xs-12 col-md-offset-2">
+
+				<div class="spacer s4"></div>
+				<div class="spacer s4"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<img src="../img/ikonka_1.png" class="center-sm">	
+					</div>
+					<div class="col-md-8 col-xs-12">	
+						<h3 class="text-center-sm">Present More and Better</h3>
+						<p class="text-center-sm">You own an online business? Invite your customers to your online shop by just scanning a leaflet.</p>
+					</div>
+				</div>
+
+				<div class="spacer s4"></div>
+				<div class="spacer s4"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12 hide-lg">
+						<img src="../img/ikonka_2.png" class="img-center">	
+					</div>
+
+					<div class="col-md-8 col-xs-12">	
+						<h3 class="text-center-sm">Personalize</h3>
+						<p class="text-center-sm">Use analytics to offer your customers exactly what they need at a given moment.</p>
+					</div>
+
+					<div class="col-md-4 col-xs-12 hide-sm">
+						<img src="../img/ikonka_2.png" class="img-center">	
+					</div>
+				</div>
+
+				<div class="spacer s4"></div>
+				<div class="spacer s4"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<img src="../img/ikonka_3.png" alt="" class="center-sm">	
+					</div>
+					<div class="col-md-8 col-xs-12">	
+						<h3 class="text-center-sm">Create Relationships</h3>
+						<p class="text-center-sm">Introduce your customers to your product and let them interact with it before they will decide to buy it.</p>
+					</div>
+				</div>
+
+				<div class="spacer s4"></div>
+				<div class="spacer s4"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12 hide-lg">
+						<img src="../img/ikonka_4.png" alt="" class="img-center">	
+					</div>
+					<div class="col-md-8 col-xs-12">	
+						<h3 class="text-center-sm">Know Your Customer</h3>
+						<p class="text-center-sm">Use an intuitive dashboard with statistics to identify customer’s needs, get insights and user activities.</p>
+					</div>
+					<div class="col-md-4 col-xs-12 hide-sm">
+						<img src="../img/ikonka_4.png" alt="" class="img-center">	
+					</div>
+				</div>
+
+				<div class="spacer s4"></div>
+				<div class="spacer s4"></div>
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<img src="../img/ikonka_5.png" alt="" class="center-sm">	
+					</div>
+					<div class="col-md-8 col-xs-12">	
+						<h3 class="text-center-sm">True Omni-Channel Experience</h3>
+						<p class="text-center-sm">Use newest technologies to get a real engagement.</p>
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+	</div>		
+</section>
+
+
+    <section id="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 col-md-offset-2">
+
+                <img src="../img/ar-form.png" class="img-center">
+
+                <div class="spacer s2"></div>
+
+                <h2 class="text-center">Are you interested?</h2>
+
+                <div class="spacer s4"></div>
+
+                <p class ="text-center">Fill in the form, check the box with a service you are interested in. We will be in touch shortly.</p>
+
+                <div class="spacer s4"></div>
+
+                <div class="form-ar-bridge">
+	<form id="contact-form_en" method="POST">
+		<div class="row">
+
+			<div class="col-md-12 col-xs-12">
+                <div class="field">
+                    <input id="email" type="email" class="form-control" name="email" placeholder=" " required>
+                    <label for="email">Email address *</label>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <div class="field">
+                    <input id="phone" type="text" class="form-control" name="phone" placeholder=" " required>
+                    <label for="phone">Telephone Number *</label>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="field">
+                    <textarea id="txt" type="text" class="form-control" name="txt" placeholder=" "></textarea>
+                    <label for="txt">Additional Info *</label>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+            	<div class="radios">
+	            	<label>
+						<input type="radio" name="radio" checked value="Wycena/oferta">
+						<span>Valuation</span>
+					</label>
+
+					<label>
+						<input type="radio" name="radio" value="Demo aplikacji AR">
+						<span>AR Bridge Demo</span>
+					</label>
+
+					<label>
+						<input type="radio" name="radio" value="Spotkanie o AR Bridge">
+						<span>Let’s Meet</span>
+					</label>
+				</div>
+            </div>
+
+            <hr>    
+
+            <div class="col-xs-12">
+                <div class="checked">
+                    <label for="agree">
+                        <input type="checkbox" id="agree" name="agree">
+                        <span>I agree that all the data submitted with this application may be processed to prepare the offer.</span>
+                        <div class="error-checkbox">Check this box</div>
+                    </label>
+                </div>
+                
+                <p class="text-left text-checked">The personal data administrator is Space Digital with HQ in Warsaw(postal code 03-901), 1 Aleja Księcia Józefa Poniatowskiego, BL PGE NARODOWY, NIP: 5492004689 REGON: 147375619. Given data are collected in order to provide the User with services of the AR Bridge website. Read our Privacy Policy. to see how we protect and manage your data. <a href="privacy-policy.html">here</a>.</p>
+            </div>
+
+			<div class="col-xs-12">
+
+				<div class="spacer s1"></div>
+
+            	<button class="button yellow" name="submit" type="submit">Order <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+            </div>
+
+        </div>
+
+        <div class="send-alert"></div>
+
+    </form>
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <img src="../img/logo-small.svg" alt="RODO">
+            </div>
+    
+            <div class="col-xs-6">
+                <ul class="social">
+                    <li><a target="_blank" href="https://www.linkedin.com/company/space-digital-groupa/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/SpaceDigitalG"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="spacer s4"></div>
+        <div class="spacer s4"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <address>
+                    <strong>Space Digital Group</strong><br>
+                    al. Ks. J. Poniatowskiego 1 <br>
+                    03-901 Warszawa, Polska 
+                </address>
+
+                <div class="sep-height s2"></div>
+
+                <address>
+                    +48 792 189 759<br>
+                    <a href="mailto:odo@space4gdpr.pl">hello@arbridge.pl</a> <br>
+                    <a href="mailto:kontakt@spacedigitalgroup.com">kontakt@spacedigitalgroup.com</a>    
+                </address>
+            </div>
+
+            <div class="col-md-4">
+                <address>
+                    <strong>Space Digital Group KZ</strong><br>
+                    21 office, Business center Sat. <br>
+                    21 B.Kunaeva Str. <br>
+                    050016, Almaty, Kazakhstan <br>
+                </address>
+
+                <div class="sep-height s2"></div>
+
+                <address>
+                    +7 701 299 12 99 <br>
+                    <a href="mailto:elmira.kashkeyeva@spacedigitalgroup.kz">elmira.kashkeyeva@spacedigitalgroup.kz</a>
+                </address>
+            </div>
+
+            <div class="col-md-4">
+                <address class="privacy">
+                    <a href="privacy-policy.html">Privacy policy</a> <br>
+                    © 2018 Space Digital Group
+                </address>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/vendors/vendors.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+
+
+</body>
+</html>
