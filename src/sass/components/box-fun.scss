@@ -1,0 +1,51 @@
+.box-fun {
+    border: 1px solid $yellow;
+    padding: 20px;
+    margin-top: 30px;
+
+    .header-fun {
+        display: flex;
+        margin-bottom: 20px;
+
+        .num {
+            border: 1px solid $yellow;
+            color: $yellow;
+            border-radius: 3px;
+            padding: 5px 10px;
+            font-family: $spaceBold;
+            font-size: 1.4rem;
+            margin-right: 20px;
+        }
+
+        .name {
+            font-family: $spaceBold;
+		    font-size: 2rem;
+        }
+    }
+
+    .body-fun {
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            font-weight: 500;
+        }
+
+        a.button-fun {
+            display: table;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 8px 20px;
+            transition: all .25s ease;
+            border: 0;
+            background: $yellow;
+            color: $white;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}

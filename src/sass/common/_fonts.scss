@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'SpaceBold';
+    font-weight: bold;
+    src: url(../fonts/SpaceText-Bold.woff2) format("woff2"), url(../fonts/SpaceText-Bold.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'SpaceSemiBold';
+    font-weight: normal;
+    src: url(../fonts/SpaceText-SemiBold.woff2) format("woff2"), url(../fonts/SpaceText-SemiBold.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'SpaceMedium';
+    font-weight: normal;
+    src: url(../fonts/SpaceText-Medium.woff2) format("woff2"), url(../fonts/SpaceText-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'SpaceRegular';
+    font-weight: normal;
+    src: url(../fonts/SpaceText-Regular.woff2) format("woff2"), url(../fonts/SpaceText-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: 'SpaceLight';
+    font-weight: normal;
+    src: url(../fonts/SpaceText-Light.woff2) format("woff2"), url(../fonts/SpaceText-Light.woff) format("woff")
+}

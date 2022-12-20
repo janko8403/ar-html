@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$spaceBold: 'SpaceBold';
+$spaceSemiBold: 'SpaceSemiBold';
+$spaceMedium: 'SpaceMedium';
+$spaceRegular: 'SpaceRegular';
+$spaceLight: 'SpaceLight';
+
+$montserrat: 'Montserrat', sans-serif;
+
+// Primary colors
+$white:         #fff;
+$black:         #000;
+$yellow:        #FDC467;
+$gray:          #F9F8F7;
+$gray-dark:     #d4d4d4;
+$bg-color:  #f2f0ec;
+$fiolet:    #1f2d3e;
+
+// Gradient colors
+$salmon:        #e95958;
+$violet:        #bb2286;
+$blue:          #1c7aff;
+
+// Shades of Grey
+$iron:          #dee1e3;
+$raven:         #808890;
+$shark:         #2f3538;
+$blackish:      #0b0d0c;
+
+// Shades of Blue
+$light-blue:    #74b3df;
+$shakespeare:   #3e96cf;
+$lochmara:      #0071bf;
+$endeavour:     #0054a3;
+
+// Error message
+$red:           #f00;
+
+// responsive
+$device-xxs: 768px;
+$device-xs: 857px;
+$device-sm: 959px;
+$device-md: 1180px;
+$device-lg: 1249px;
+
+// Breakpoints
+$xs:            480px;
+$sm:            640px;
+$md:            959px;
+$lg:            1200px;
+$xl:            1280px;
+
+
+// Offsets
+$offset:        5vw;
+
+
+// Animation settings ([data-view])
+$animation-delay-list: (
+    '0':    .1s,
+    '1':    .2s,
+    '2':    .3s,
+    '3':    .4s,
+    '4':    .5s,
+    '5':    .6s,
+    '6':    .7s
+);
+$animation-direction-list: (
+    'to-top':       (0, 50px, 0),
+    'to-left':      (50px, 0, 0),
+    'to-right':     (-50px, 0, 0),
+    'to-bottom':    (0, -50px, 0)
+);

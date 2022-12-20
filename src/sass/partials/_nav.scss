@@ -1,0 +1,97 @@
+.navbar {
+	background-color: $yellow;
+    border-color: $yellow;
+    border-radius: 0px;
+    min-height: 70px;
+    margin-bottom: 0;
+
+    .navbar-collapse {
+		border-color: transparent;
+    }
+
+    .navbar-header {
+		margin-bottom: 20px;
+		@include breakpoint(sm) {
+    		margin-bottom: 14px;
+		}
+
+		button {
+			&.navbar-toggle {
+				border: 0;
+				margin-right: 40px;
+    			margin-top: 25px;
+
+    			&:hover, &:focus {
+    				background: transparent;
+    			}
+
+    			&.collapsed {
+    				// margin-top: 25px;
+    				span {
+    					&.underline-nav {
+    						&:before {
+								top: 0;
+								
+								@include shift(all, .3s, ease);
+							}
+
+							&:after {
+								top: -11px;
+								
+								@include shift(all, .3s, ease);
+							}
+    					}
+    				}
+    			}
+
+				span {
+					&.underline-nav {
+						position: relative;
+
+						&:before {
+							position: absolute; 
+							content: "";
+							background: url(../img/underline.svg);
+							background-repeat: no-repeat;
+							width: 30px;
+							height: 9px;
+							top: -16px;
+							
+							@include shift(all, .3s, ease);
+						}
+
+						&:after {
+							position: absolute; 
+							content: "";
+							background: url(../img/underline.svg);
+							background-repeat: no-repeat;
+							width: 30px;
+							height: 9px;
+							transform: rotate(180deg);
+							top: -4px;
+							
+							@include shift(all, .3s, ease);
+						}
+					}
+				}
+			}
+		}
+    }
+    
+	.navbar-brand {
+		img {
+			height: 40px;
+		}
+	}
+
+	.navbar-nav {
+		margin-top: 5px;
+		li {
+			a {
+				font-size: 1.3rem;
+				font-weight: 600;
+				color: $black;
+			}
+		}
+	}
+}

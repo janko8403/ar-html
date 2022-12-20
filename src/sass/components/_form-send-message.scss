@@ -1,0 +1,237 @@
+.form-ar-bridge {
+
+    .field {
+        display: flex;
+        flex-flow: column-reverse;
+        margin-bottom: 1em;
+    }
+
+    .error-checkbox {
+        display: none;
+        font-size: 1.2rem;
+        color: red;
+        font-family: Montserrat,sans-serif;
+        font-weight: 400;
+    }
+
+    .show-checkbox {
+        display: block;
+    }
+
+    .disabled-cursor {
+        cursor: not-allowed;
+    }
+
+    label, input, textarea {
+      transition: all 0.2s;
+      touch-action: manipulation;
+    }
+
+    label {
+        font-family: $spaceLight;
+        color: $gray-dark;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        &.error {
+            position: absolute;
+            bottom: 41px;
+            font-size: .8rem;
+            color: red;
+            transform: translate(0, 2.125rem) scale(1.5) !important;
+        }
+    }
+
+    input:placeholder-shown + label, textarea:placeholder-shown + label {
+      cursor: text;
+      overflow: hidden;
+      transform-origin: left bottom;
+      transform: translate(0, 2.125rem) scale(1.5);
+    }
+
+    ::-webkit-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+    }
+
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    input:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label,
+    input:focus + label, textarea:focus + label {
+      transform: translate(0, 0) scale(1);
+      cursor: pointer;
+    }
+
+    input:focus + label.error {
+        margin-top: 15px;
+        transform-origin: left bottom;
+        transform: translate(0, 0) scale(1);
+    }
+
+    .form-control {
+        color: $black;
+        font-size: 1.6rem;
+        padding: 1rem 0;
+        border: 0;
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid $gray-dark;
+        transition: background 250ms ease-in, border-color 250ms ease-in, padding 250ms ease-in;
+        margin-bottom: 2.5rem;
+        height: 50px;
+        border-radius: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.0);
+    }
+    textarea {
+        height: 150px !important;
+        resize: none;
+    }
+
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus {   
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0) inset, 0 0 0 rgba(126, 239, 104, 0) !important;
+        outline: 0 none !important;
+        background: transparent;
+        border-bottom: 2px solid $yellow !important;
+    }
+
+    .radios {
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            padding: 5px 10px 5px 0;
+            cursor: pointer;
+            margin-bottom: 20px;
+            color: $black;
+            font-family: $spaceLight;
+            font-weight: 600;
+            font-size: 1.5rem;
+
+            span {
+                position: relative;
+                line-height: 22px;
+
+                &:before, &:after {
+                    content: '';
+                }
+
+                &:before {
+                    border: 2px solid $yellow;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+                &:after {
+                    background: $yellow;
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 3px;
+                    left: 5px;
+                    transition: 300ms;
+                    opacity: 0;
+                }
+            }
+        }
+
+        label input:checked+span:after {
+            opacity: 1;
+        }
+    }
+
+    .checked {
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            padding: 5px 10px 5px 0;
+            cursor: pointer;
+            margin-bottom: 20px;
+            color: $black;
+            font-family: $montserrat;
+            font-weight: 600;
+            font-size: 1.5rem;
+
+            span {
+                position: relative;
+                line-height: 22px;
+                font-size: 1.1rem;
+
+                &:before, &:after {
+                    content: '';
+                }
+
+                &:before {
+                    border: 2px solid $yellow;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+                &:after {
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-decoration: inherit;
+                    content: "\f00c";
+                    color: $yellow;
+                    position: absolute;
+                    top: -4px;
+                    left: 5px;
+                    transition: 300ms;
+                    opacity: 0;
+                }
+            }
+        }
+
+        label input:checked+span:after {
+            opacity: 1;
+        }
+    }
+
+    .text-checked {
+        font-size: 1.1rem;
+    }
+
+    .send-alert {
+        display: none;
+        margin-top: 30px;
+        border-radius: 2px;
+        background: $yellow;
+        padding: 10px 20px;
+        color: $white;
+        font-size: 1.8rem;
+    }
+
+    .show-alert {
+        display: block;
+    }
+
+}

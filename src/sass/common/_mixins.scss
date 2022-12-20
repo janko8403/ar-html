@@ -1,0 +1,95 @@
+//Breakpoints
+@mixin breakpoint($width) {
+
+    @if ($width == xs) {
+        @media (min-width: $xs) {
+            @content
+        }
+    }
+    @if ($width == xs-only) {
+        @media (max-width: $xs - 1) {
+            @content
+        }
+    }
+    @if ($width == sm) {
+        @media (min-width: $sm) {
+            @content
+        }
+    }
+    @if ($width == up-to-sm) {
+        @media (max-width: $sm - 1) {
+            @content
+        }
+    }
+    @if ($width == md) {
+        @media (min-width: $md) {
+            @content
+        }
+    }
+    @if ($width == up-to-md) {
+        @media (max-width: $md - 1) {
+            @content
+        }
+    }
+    @if ($width == lg) {
+        @media (min-width: $lg) {
+            @content
+        }
+    }
+    @if ($width == up-to-lg) {
+        @media (max-width: $lg - 1) {
+            @content
+        }
+    }
+    @if ($width == xl) {
+        @media (min-width: $xl) {
+            @content
+        }
+    }
+    @if ($width == portrait) {
+        @media screen and (orientation: portrait) {
+            @content
+        }
+    }
+    @if ($width == landscape) {
+        @media screen and (orientation: landscape) {
+            @content
+        }
+    }
+}
+
+
+@mixin full-width {
+    width: calc(100% + 5vw * 2);
+    margin: 0 -5vw;
+}
+
+// Opacity transition
+@mixin opacity ($t) {
+    transition: opacity $t ease-in-out, visibility $t ease-in-out, transform $t ease-in-out;
+}
+
+// Gradient mixins
+@mixin gradient-lr {
+    background: linear-gradient(to right, $salmon 0%, $violet 50%, $blue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$salmon', endColorstr='$blue',GradientType=1 );
+}
+@mixin gradient-rl {
+    background: linear-gradient(to right, $blue 0%, $violet 50%, $salmon 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='$salmon',GradientType=1 );
+}
+@mixin gradient-tb {
+    background: linear-gradient(to bottom, $salmon 0%, $violet 50%, $blue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$salmon', endColorstr='$blue',GradientType=0 );
+}
+@mixin gradient-bt {
+    background: linear-gradient(to bottom, $blue 0%, $violet 50%, $salmon 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='$salmon',GradientType=0 );
+}
+
+@mixin shift($property: all, $duration: .3s, $ease: linear){
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+}

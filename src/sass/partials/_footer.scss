@@ -1,0 +1,54 @@
+footer {
+	background: $gray;
+	padding: 5.5rem 0 3rem;
+	color: $black;
+
+	img {
+		color: $yellow;
+	}
+
+	a[href^="mailto:"] {
+		text-decoration: underline;
+	}
+
+
+	a {
+		color: $black;
+
+		&:hover {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+
+	ul {
+		&.social {
+			float: right;
+			li {
+				padding: 0 5px;
+				display: inline-block;
+
+				a {
+					color: $yellow;
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	address {
+		font-family: $spaceRegular, monospace;
+	  	font-size: 1.2rem;
+	  	line-height: 30px;
+	}
+
+	.privacy {
+		margin-top: 0;
+		float: none;
+
+		@include breakpoint(sm) {
+			margin-top: 14.3rem;
+			float: right;
+		}
+	}
+}

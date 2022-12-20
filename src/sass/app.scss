@@ -1,0 +1,27 @@
+//Vendors
+@import 'vendors/bootstrap';
+@import 'vendors/animate';
+
+
+// Common
+@import 'common/vars';
+@import 'common/fonts';
+@import 'common/mixins';
+@import 'common/misc';
+@import 'common/typography';
+@import 'common/buttons';
+@import 'common/slick';
+
+// Components
+@import 'components/box-fun';
+@import 'components/box-plan';
+@import 'components/form-send-message';
+@import 'components/tabs';
+@import 'components/box-markers';
+
+// Partials
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/section';
+@import 'partials/footer';
